@@ -18,6 +18,10 @@ public class NewCalculator {
         this.lastResult = x - y;
         return this.lastResult;
     }
+    public double Multiply(double x, double y){
+    this.lastResult = x * y;
+    return this.lastResult;
+    }
 
     public double Divide(double dividend, double divisor){
         this.lastResult = dividend % divisor;
