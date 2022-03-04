@@ -23,9 +23,14 @@ public class NewCalculator {
     return this.lastResult;
     }
 
-    public double Divide(double dividend, double divisor){
-        this.lastResult = dividend / divisor;
-        return this.lastResult;
-    }
+public double Divide(double dividend, double divisor) {
+if (divisor == 0){
+System.err.println("Attempted to divide by zero");
+return 0;
+}
+this.lastResult = dividend / divisor;
+return this.lastResult;
+}
+
     
 }
